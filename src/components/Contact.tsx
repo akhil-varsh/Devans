@@ -122,8 +122,10 @@ export function Contact() {
               <h3 className="text-xl font-display font-bold mb-4 gradient-text">
                 Office Hours
               </h3>
-              <div className="space-y-2">
-  <p>Monday <boltAction type="file" filePath="src/components/Contact.tsx" /> - Friday: 9:00 AM - 6:00 PM</p>
+             <div className="space-y-2">
+  <p>
+    Monday <span>(Type: file, Path: src/components/Contact.tsx)</span> - Friday: 9:00 AM - 6:00 PM
+  </p>
   <p>Saturday: 10:00 AM - 2:00 PM</p>
   <p>Sunday: Closed</p>
 </div>
