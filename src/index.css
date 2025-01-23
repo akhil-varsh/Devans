@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0066FF;
+  --secondary: #00F5FF;
+  --accent: #FF00FF;
+  --background: #0A0A0A;
+}
+
+body {
+  @apply bg-neutral-dark text-white font-sans;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.glass-effect {
+  @apply backdrop-blur-md bg-white/10 border border-white/20;
+}
+
+.neon-glow {
+  text-shadow: 0 0 10px var(--primary),
+               0 0 20px var(--primary),
+               0 0 30px var(--primary);
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent;
+  background-image: linear-gradient(45deg, var(--primary), var(--secondary));
+}
+
+.button-primary {
+  @apply px-6 py-3 rounded-full bg-primary hover:bg-primary-dark 
+         transition-all duration-300 transform hover:scale-105
+         font-semibold text-white shadow-lg hover:shadow-primary/50;
+}
+
+.button-secondary {
+  @apply px-6 py-3 rounded-full border-2 border-secondary
+         hover:bg-secondary/10 transition-all duration-300
+         transform hover:scale-105 font-semibold text-white;
+}
+
+.section-padding {
+  @apply py-20 px-4 sm:px-6 lg:px-8;
+}
+
+.card {
+  @apply glass-effect rounded-2xl p-6 transition-all duration-500
+         hover:shadow-lg hover:shadow-primary/20 hover:scale-[1.02];
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-neutral-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/50 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary;
+}
