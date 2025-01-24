@@ -6,7 +6,7 @@ const team = [
     name: 'Akhilvarsh Pettem',
     role: 'Chief Executive Officer',
     expertise: 'Robotics & AI',
-    image: 'src/assets/avatar.jpg',
+    image: './src/assets/avatar.jpg',
   },
   
 ];
