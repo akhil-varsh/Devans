@@ -8,24 +8,7 @@ const team = [
     expertise: 'Robotics & AI',
     image: 'src/assets/avatar.jpg',
   },
-  {
-    name: 'Dr. James Wilson',
-    role: 'Chief Technology Officer',
-    expertise: 'Mechanical Engineering',
-    image: 'https://placehold.co/300x300/transparent/transparent?text=JW',
-  },
-  {
-    name: 'Dr. Maria Rodriguez',
-    role: 'Head of AI Research',
-    expertise: 'Machine Learning',
-    image: 'https://placehold.co/300x300/transparent/transparent?text=MR',
-  },
-  {
-    name: 'Alex Thompson',
-    role: 'Lead Software Engineer',
-    expertise: 'Robotics Software',
-    image: 'https://placehold.co/300x300/transparent/transparent?text=AT',
-  },
+  
 ];
 
 export function Team() {
